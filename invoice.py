@@ -1,6 +1,3 @@
-# To add a new cell, type '# %%'
-# To add a new markdown cell, type '# %% [markdown]'
-# %%
 import pandas as pd
 import openpyxl as px
 import datetime
@@ -55,16 +52,14 @@ next_month = EOM + relativedelta(months=1)
 
 
 
-
-# %%
-#----------------------
+#----------------------------------------
 # 【２】 請求書一覧から顧客CDをDFに取得
-#----------------------
+#----------------------------------------
 customer_df = pd.read_excel("請求一覧創造太郎.xlsx", sheet_name="顧客管理テーブル", index=0, header=1)
-display(customer_df)
 
 
-# %%
+
+
 #----------------------
 # 【３】 inputからその月のシートを取得
 #----------------------
